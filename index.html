@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmerNote</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="logo"><a href="">AmarNote</a></div>
+    <div class="header">
+        
+        <label class="slide-nave">
+            <input class="inputbtn" type="checkbox" name="toggle" id="toggle">
+            <div class="toggle">
+                <span class="top-line toggle-common"></span>
+                <span class="middle-line toggle-common"></span>
+                <span class="end-line toggle-common"></span>
+            </div>
+            <div class="slide">
+                <div class="blur"></div>
+                <h1>
+                   AmarNote
+                </h1>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="./English word/index.html">English words</a></li>
+                    <li><a href="" onclick="checkPassword(event)">English Chinese</a></li>
+                    <li><a href="/Physic/index.html">Physic Note</a></li>
+                    <li><a href="/Chemistry/index.html">Chemistry Note</a></li>
+                    <li><a href="/Biology/index.html">Biology Note</a></li>
+                    <li><a href="/Math/index.html">Math Note</a></li>
+                </ul>
+            </div>
+        </label>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="./English word/index.html">English Words</a>
+        </div>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="" onclick="checkPassword(event)">English Chinese Bangla</a>
+            <p class="disable">(This one is only for admin)</p>
+        </div>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="/Physic/index.html">Physic Note</a>
+        </div>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="/Chemistry/index.html">Chemistry Note</a>
+        </div>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="/Biology/index.html">Biology Note</a>
+        </div>
+        <div class="container">
+            <div class="div-blur"></div>
+            <a href="/Math/index.html">Math Note</a>
+        </div>
+    </section>
+    <footer>
+        <div class="blur-footer"></div>
+        <a href="index.html">
+        <img src="/bgimage/home-icon.jpg" alt=""></a>
+    </footer>
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const password = prompt("Enter the password:");
+            const correctPassword = "t.o.n.i.m142";
+            const targetUrl = "/English Chinese Bangla/index.html";
+
+            if (password === correctPassword) {
+                window.location.href = targetUrl;
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>

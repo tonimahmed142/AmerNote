@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Word Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <h1>English Word Test</h1>
+  <div class="container">
+    <div class="count-box">
+      <div class="count">
+          <div class="count-item1">
+            <label for="startIndex">Input start number:</label>
+            <input placeholder="First number" type="number" id="startIndex" min="1" value="295">
+          </div>
+          <div class="count">
+            <label for="endIndex">Input end number:</label>
+            <input placeholder="Last number" type="number" id="endIndex" min="2" value="315">
+          </div>
+      </div>
+    </div>
+    <div class="display-item">
+      <div class="display-items">
+        <div id="wordDisplay" class="wordDisplay"></div>
+        <button class="trybtn" id="tryBtn">Try Yourself >>></button>
+        <button class="stopbtn" id="stopBtn">Stop</button>
+      </div>
+    </div>
+  </div>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmarNote Basic Words</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="logo"><a href="">AmarNote</a></div>
+    <div class="header">
+        
+        <label class="slide-nave">
+            <input class="inputbtn" type="checkbox" name="toggle" id="toggle">
+            <div class="toggle">
+                <span class="top-line toggle-common"></span>
+                <span class="middle-line toggle-common"></span>
+                <span class="end-line toggle-common"></span>
+            </div>
+            <div class="slide">
+                <div class="blur"></div>
+                <h1>
+                   AmarNote
+                </h1>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/English word/index.html">English words</a></li>
+                    <li><a href="/English Chinese Bangla/index.html"class="active">English Chinese</a></li>
+                    <li><a href="/Physic/index.html">Physic Note</a></li>
+                    <li><a href="/Chemistry/index.html">Chemistry Note</a></li>
+                    <li><a href="/Biology/index.html">Biology Note</a></li>
+                    <li><a href="/Math/index.html">Math Note</a></li>
+                </ul>
+            </div>
+        </label>
+    </div>
+
+
+    <i class='bx bx-up-arrow-alt top-arrow' id="scrollTopBtn" onclick="scrollToTop()"></i>
+    <div class="search-container">
+    <input class="search-box" type="text" id="search-box" placeholder="Search English words" oninput="filterWords()">
+</div>
+
+<div class="alltest">
+    <h2>Already had Finished !!!</h2><br><br>
+    <div class="alltest-main-box">
+        <div class="main-top-try">Try Yourself</div>
+        <div class="common-box english-link"><a href="englishtest.html">English</a></div>
+        <div class="common-box chinese-link"><a href="chinesetest.html">Chinese</a></div>
+    </div>
+    
+</div>
+
+<div class="margin-body">
+    <div id="word-container" class="body-margin"></div>
+</div>
+<div class="alltestbottom">
+    <h2>Already had Finished !!!</h2><br><br>
+    <div class="alltest-main-box">
+        <div class="main-top-try">Try Yourself</div>
+        <div class="common-box english-link"><a href="englishtest.html">English</a></div>
+        <div class="common-box chinese-link"><a href="chinesetest.html">Chinese</a></div>
+    </div>
+</div>
+<footer>
+    <div class="blur-footer"></div>
+    <a href="/index.html">
+    <img src="/bgimage/home-icon.jpg" alt=""></a>
+</footer>
+
+</body>
+</html>

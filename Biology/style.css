@@ -1,0 +1,37 @@
+.logo {
+    z-index: 1;
+}
+.cover-all-chapter-list {
+    display: flex;
+    justify-content: center;
+}
+.all-chapter-list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.all-chapter-list a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff519a7e;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 black;
+}
+@media screen and (min-width:500px) {
+    .all-chapter-list{
+        padding: 0 10%;
+    }
+}
+@media screen and (min-width:1000px) {
+    .all-chapter-list{
+        padding: 0 18%;
+    }
+}

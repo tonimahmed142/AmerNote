@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmerNote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+
+</head>
+<body>
+    <div class="logo"><a href="">AmarNote</a></div>
+    <div class="header">
+        
+        <label class="slide-nave">
+            <input class="inputbtn" type="checkbox" name="toggle" id="toggle">
+            <div class="toggle">
+                <span class="top-line toggle-common"></span>
+                <span class="middle-line toggle-common"></span>
+                <span class="end-line toggle-common"></span>
+            </div>
+            <div class="slide">
+                <div class="blur"></div>
+                <h1>
+                   AmarNote
+                </h1>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./English word/index.html">English words</a></li>
+                    <li><a href="" onclick="checkPassword(event)">English Chinese</a></li>
+                    <li><a href="/Physic/index.html">Physic Note</a></li>
+                    <li><a href="/Chemistry/index.html">Chemistry Note</a></li>
+                    <li><a href="/Biology/index.html"class="active" >Biology Note</a></li>
+                    <li><a href="/Math/index.html">Math Note</a></li>
+                </ul>
+            </div>
+        </label>
+    </div>
+
+
+
+
+<div class="cover-all-chapter-list">
+    <div class="all-chapter-list">
+        <a href="1st chapter/chapter1.html">Chapter 1: CELL AND IT'S STRUCTURE</a>
+        <a href="2nd chapter/chapter2.html">Chapter 2: CELL DIVISION</a>
+        <a href="3rd chapter/chapter3.html">Chapter 3: CELL CHEMISTRY</a>
+        <a href="4th chapter/chapter4.html">Chapter 4: MICRO-ORGANISM</a>
+        <a href="5th chapter/chapter5.html">Chapter 5: ALGAE AND FUNGI</a>
+        <a href="6th chapter/chapter6.html">Chapter 6: BRYOPHYTA AND ANGIOSPERMS</a>
+        <a href="7th chapter/chapter7.html">Chapter 7: GYMNOSPERMS AND ANGIOSPERMS</a>
+        <a href="8th chapter/chapter8.html">Chapter 8: TISSUE AND TISSUE SYSTEM</a>
+        <a href="9th chapter/chapter9.html">Chapter 9: PLANT PHYSIOLOGY</a>
+        <a href="10th chapter/chapter10.html">Chapter 10: PLANT REPRODUCTION</a>
+        <a href="11th chapter/chapter11.html">Chapter 11: BIOTECHNOLOGY</a>
+        <a href="12th chapter/chapter12.html">Chapter 12: ENVIRONMENT OF LIVING ORGANISMS</a>
+    </div>
+
+</div>
+
+
+
+
+    <footer>
+        <div class="blur-footer"></div>
+        <a href="index.html">
+        <img src="/bgimage/home-icon.jpg" alt=""></a>
+    </footer>
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const password = prompt("Enter the password:");
+            const correctPassword = "t.o.n.i.m142";
+            const targetUrl = "/English Chinese Bangla/index.html";
+
+            if (password === correctPassword) {
+                window.location.href = targetUrl;
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>

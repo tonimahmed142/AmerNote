@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Word Pronunciation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .count{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .count-item1, .count-item2 {
+          display: inline-block;
+          text-align: center;
+          padding: 10px;
+        }
+        .display-item{
+          display: flex;
+          justify-content: center;
+          height: auto;
+          width: 100%;
+          margin-top: 20px;
+        }
+        .common{
+          color: #ff0000;
+        }
+        button{
+          margin: 10px;
+          padding:20px;
+          background-color: rgb(128, 179, 255);
+          border-radius: 20px;
+          cursor: pointer;
+          color: #ff0000;
+          border: none;
+        }
+        button:hover {
+          background-color: aquamarine;
+        }
+        .wordDisplay {
+          font-size: 30px;
+          color: red;
+          text-decoration: underline;
+          text-align: center;
+        }
+        .display-items{
+          display: inline-block;
+        }
+        h1{
+          text-align: center;
+        }
+        .word-body {
+          margin-bottom: 50px;
+          height: auto;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+        }
+        .word-box {
+            display: inline-block;
+            text-transform: capitalize;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            width: 200px;
+        }
+        .word-box:active{
+          background-color: #646464;
+        }
+        p{
+         text-align: center;
+         color: #646464;
+        }
+        label{
+          font-size: 24px;
+        }
+    </style>
+</head>
+<script>
+  function checkPassword(event) {
+      event.preventDefault();
+      const password = prompt("Enter the password:");
+      const correctPassword = "t.o.n.i.m142";
+      const targetUrl = "/English Chinese Bangla/index.html";
+
+      if (password === correctPassword) {
+          window.location.href = targetUrl;
+      } else {
+          alert("Incorrect password. Try again.");
+      }
+  }
+</script>
+<body>
+
+
+
+
+  <div class="logo"><a href="">AmarNote</a></div>
+  <div class="header">
+      
+      <label class="slide-nave">
+          <input class="inputbtn" type="checkbox" name="toggle" id="toggle">
+          <div class="toggle">
+              <span class="top-line toggle-common"></span>
+              <span class="middle-line toggle-common"></span>
+              <span class="end-line toggle-common"></span>
+          </div>
+          <div class="slide">
+              <div class="blur"></div>
+              <h1>
+                 AmarNote
+              </h1>
+              <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/English word/index.html" class="active">English words</a></li>
+                  <li><a href="" onclick="checkPassword(event)">English Chinese</a></li>
+                  <li><a href="/Physic/index.html">Physic Note</a></li>
+                  <li><a href="/Chemistry/index.html">Chemistry Note</a></li>
+                  <li><a href="/Biology/index.html">Biology Note</a></li>
+                  <li><a href="/Math/index.html">Math Note</a></li>
+              </ul>
+          </div>
+      </label>
+  </div>
+
+
+  <i class='bx bx-up-arrow-alt top-arrow' id="scrollTopBtn" onclick="scrollToTop()"></i>
+  <div class="search-container">
+  <input class="search-box" type="text" id="search-box" placeholder="Search English words" oninput="filterWords()">
+</div>
+
+<div class="alltest">
+  <h2>Already had Finished !!!</h2><br><br>
+  <div class="alltest-main-box">
+      <div class="main-top-try" onclick="document.getElementById('myLink1').click();">Try Yourself</div>
+      <a href="test.html" id="myLink1"></a>
+  </div>
+  
+</div>
+
+<div class="margin-body">
+  <div id="word-container" class="body-margin"></div>
+</div>  
+
+  <div class="alltestbottom">
+    <h2>Already had Finished !!!</h2><br><br>
+    <div class="alltest-main-box">
+        <div class="main-top-try" onclick="document.getElementById('myLink1').click();">Try Yourself</div>
+        <a href="test.html" id="myLink1"></a>
+    </div>
+    
+  </div>
+    
+  <footer>
+    <div class="blur-footer"></div>
+    <a href="/index.html">
+    <img src="/bgimage/home-icon.jpg" alt=""></a>
+</footer>
+</body>
+</html>
+
