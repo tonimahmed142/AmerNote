@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(/bgimage/small.jpg);
+    background-image: url(./bgimage/small.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -147,7 +147,7 @@ input:checked ~ .slide, .blur{
 }
 @media screen and  (min-width: 1100px) {
     body{
-        background-image: url(/bgimage/large1.avif);
+        background-image: url(./bgimage/large1.avif);
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -466,6 +466,7 @@ body {
     justify-content: center;
     position: relative;
     width: 150px;
+    z-index: -100;
     
 }
 
@@ -475,7 +476,6 @@ body {
     font-size: 1.3rem;
     padding: 10px;
     background-color: #e0167b;
-    z-index: 1;
     transition: all 0.4s;
 }
 
