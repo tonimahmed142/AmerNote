@@ -24,56 +24,56 @@
                    AmarNote
                 </h1>
                 <ul>
-                    <li><a class="active" href="./index.html">Home</a></li>
-                    <li><a href="./English word/index.html">English words</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="English word/index.html">English words</a></li>
                     <li><a href="" onclick="checkPassword(event)">English Chinese</a></li>
-                    <li><a href="./Physic/index.html">Physic Note</a></li>
-                    <li><a href="./Chemistry/index.html">Chemistry Note</a></li>
-                    <li><a href="./Biology/index.html">Biology Note</a></li>
-                    <li><a href="./Math/index.html">Math Note</a></li>
+                    <li><a href="Physic/index.html">Physic Note</a></li>
+                    <li><a href="Chemistry/index.html">Chemistry Note</a></li>
+                    <li><a href="Biology/index.html">Biology Note</a></li>
+                    <li><a href="Math/index.html">Math Note</a></li>
                 </ul>
             </div>
         </label>
     </div>
 
     <section>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink1').click();">
             <div class="div-blur"></div>
-            <a href="./English word/index.html">English Words</a>
+            <a id="myLink1" href="English word/index.html">English Words</a>
         </div>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink2').click();">
             <div class="div-blur"></div>
-            <a href="" onclick="checkPassword(event)">English Chinese Bangla</a>
+            <a id="myLink2" href="" onclick="checkPassword(event)">English Chinese Bangla</a>
             <p class="disable">(This one is only for admin)</p>
         </div>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink3').click();">
             <div class="div-blur"></div>
-            <a href="./Physic/index.html">Physic Note</a>
+            <a id="myLink3" href="Physic/index.html">Physic Note</a>
         </div>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink4').click();">
             <div class="div-blur"></div>
-            <a href="./Chemistry/index.html">Chemistry Note</a>
+            <a id="myLink4" href="Chemistry/index.html">Chemistry Note</a>
         </div>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink5').click();">
             <div class="div-blur"></div>
-            <a href="./Biology/index.html">Biology Note</a>
+            <a id="myLink5" href="Biology/index.html">Biology Note</a>
         </div>
-        <div class="container">
+        <div class="container" onclick="document.getElementById('myLink6').click();">
             <div class="div-blur"></div>
-            <a href="./Math/index.html">Math Note</a>
+            <a id="myLink6" href="Math/index.html">Math Note</a>
         </div>
     </section>
     <footer>
         <div class="blur-footer"></div>
         <a href="index.html">
-        <img src="./bgimage/home-icon.jpg" alt=""></a>
+        <img src="bgimage/home-icon.jpg" alt=""></a>
     </footer>
     <script>
         function checkPassword(event) {
             event.preventDefault();
             const password = prompt("Enter the password:");
             const correctPassword = "t.o.n.i.m142";
-            const targetUrl = "./English Chinese Bangla/index.html";
+            const targetUrl = "English Chinese Bangla/index.html";
 
             if (password === correctPassword) {
                 window.location.href = targetUrl;
