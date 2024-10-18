@@ -432,7 +432,6 @@ body {
     align-items: center;
     margin-top: 100px;
     text-align: center;
-    z-index:-1;
 }
 .alltest h2{
     color: #ff0000;
@@ -449,7 +448,6 @@ body {
     align-items: center;
     margin-bottom: 100px;
     text-align: center;
-    z-index:-1;
 }
 .alltestbottom h2 {
     color: #ff0000;
@@ -466,7 +464,6 @@ body {
     justify-content: center;
     position: relative;
     width: 150px;
-    z-index: -100;
     
 }
 
@@ -476,6 +473,7 @@ body {
     font-size: 1.3rem;
     padding: 10px;
     background-color: #e0167b;
+    z-index: 1;
     transition: all 0.4s;
 }
 
